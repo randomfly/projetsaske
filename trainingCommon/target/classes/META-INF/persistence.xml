@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="biblioCommon">
+		<class>com.ib.trainingcommon.bo.Course</class>
+		<class>com.ib.trainingcommon.bo.Role</class>
+		<class>com.ib.trainingcommon.bo.User</class>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="com.p6spy.engine.spy.P6SpyDriver"/> 
+			<property name="javax.persistence.jdbc.url" value="jdbc:p6spy:mysql://localhost:3306/trainingDB"/>
+			<property name="javax.persistence.jdbc.user" value="training"/>
+			<property name="javax.persistence.jdbc.password" value="mdp"/> 
+			<property name="hibernate.ejb.cfgfile" value="hibernate.cfg.xml"/>
+		</properties>
+	</persistence-unit>
+</persistence>

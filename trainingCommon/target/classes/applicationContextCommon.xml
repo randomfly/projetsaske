@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	<tx:annotation-driven
+		transaction-manager="txManager" />
+
+	<bean id="courseAC" class="com.ib.trainingcommon.ac.CourseAC">
+		<property name="courseFacade">
+			<ref bean="courseFacade" />
+		</property>
+
+	</bean>
+
+	<bean id="courseFacade"
+		class="com.ib.trainingcommon.facade.CourseFacade">
+		<property name="courseDAO">
+			<ref bean="courseDAO" />
+		</property>
+	</bean>
+
+	<bean id="courseBouchonDAO"
+		class="com.ib.trainingcommon.dao.CourseBouchonDAO">
+		<property name="courses">
+			<list>
+				<ref bean="courseBouchon" />
+				<ref bean="courseBouchon" />
+			</list>
+		</property>
+	</bean>
+	<bean id="courseDAO" class="com.ib.trainingcommon.dao.CourseDAO">
+	</bean>
+	<bean id="utilisateurFacade"
+		class="com.ib.trainingcommon.facade.UtilisateurFacade">
+		<property name="utilisateurDAO" ref="utilisateurDAO"></property>
+	</bean>
+	<bean id="utilisateurAC"
+		class="com.ib.trainingcommon.ac.UtilisateurAC">
+		<property name="utilisateurFacade" ref="utilisateurFacade"></property>
+	</bean>
+
+	<bean id="utilisateurDAO"
+		class="com.ib.trainingcommon.dao.UtilisateurDAO">
+	</bean>
+	<bean id="utilisateurBouchonDAO"
+		class="com.ib.trainingcommon.dao.UtilisateurBouchonDAO">
+	</bean>
+
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName"
+			value="com.p6spy.engine.spy.P6SpyDriver" />
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/trainingDB" />
+		<property name="username" value="training" />
+		<property name="password" value="mdp" />
+	</bean>
+
+	<bean id="myEmf"
+		class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="biblioCommon" />
+	</bean>
+
+	<bean id="txManager"
+		class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="myEmf" />
+	</bean>
+	<!-- the transactional advice (what 'happens'; see the <aop:advisor/> bean 
+		below) -->
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<!-- the transactional semantics... -->
+		<tx:attributes>
+			<!-- all methods starting with 'get' are read-only -->
+			<tx:method name="*" read-only="true" />
+			<!-- other methods use the default transaction settings (see below) -->
+			<tx:method name="save*" read-only="false" />
+			<tx:method name="update*" read-only="false" />
+			<tx:method name="remove*" read-only="false" />
+		</tx:attributes>
+	</tx:advice>
+	<bean id="courseBouchon" class="com.ib.trainingcommon.bo.Course"
+		scope="prototype">
+		<constructor-arg value="999"></constructor-arg>
+		<constructor-arg value="123-isbn-456"></constructor-arg>
+		<constructor-arg value="mon course bouchon spring"></constructor-arg>
+		<constructor-arg>
+			<bean factory-bean="dateFormat" factory-method="parse">
+				<constructor-arg value="2006-05-01"></constructor-arg>
+			</bean>
+		</constructor-arg>
+	</bean>
+	<bean id="dateFormat" class="java.text.SimpleDateFormat">
+		<constructor-arg value="yyyy-MM-dd" />
+	</bean>
+	<bean id="loggerAdvice"
+		class="com.ib.trainingcommon.advice.LoggerAdvice">
+	</bean>
+
+	<aop:config>
+		<aop:aspect ref="loggerAdvice">
+			<aop:before method="logBefore"
+				pointcut-ref="loggerAdvicePointcut" />
+			<aop:after method="logAfter"
+				pointcut-ref="loggerAdvicePointcut" />
+			<aop:around method="logAround"
+				pointcut-ref="loggerAdvicePointcut" />
+			<aop:pointcut
+				expression="execution(* com.ib.bibliocommon.*.*.findAll(..))"
+				id="loggerAdvicePointcut" />
+			<aop:around method="logAroundAvecParam"
+				pointcut-ref="loggerAdvicePointcutGet" />
+			<aop:pointcut
+				expression="execution(* com.ib.bibliocommon.*.*.get(Integer)) and args(id)"
+				id="loggerAdvicePointcutGet" />
+		</aop:aspect>
+	</aop:config>
+</beans>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" strict="true"
+	xmlns="http://logging.apache.org/log4j/2.0/config"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://logging.apache.org/log4j/2.0/config log4j-config.xsd">
+	<Appenders>
+		<Appender name="fichierTraining" type="File"
+			fileName="${sys:catalina.home}/logs/training/trainingWeb.log" >
+			<Layout type="PatternLayout">
+				<Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+			</Layout>
+		</Appender>
+		<Appender name="spring" type="File" fileName="${sys:catalina.home}/logs/training/springWeb.log"
+			>
+			<Layout type="PatternLayout">
+				<Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+			</Layout>
+		</Appender>
+		<Appender name="hibernate" type="File"
+			fileName="${sys:catalina.home}/logs/training/hibernateWeb.log" >
+			<Layout type="PatternLayout">
+				<Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+			</Layout>
+		</Appender>
+		<Appender name="p6spy" type="File"
+			fileName="${sys:catalina.home}/logs/training/p6spyWeb.log" >
+			<Layout type="PatternLayout">
+				<Pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+			</Layout>
+		</Appender>
+		<Appender type="Console" name="console">
+			<Layout type="PatternLayout"
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Appender>
+	</Appenders>
+	<Loggers>
+		<Logger name="org.hibernate" level="error" additivity="false">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="hibernate" />
+		</Logger>
+		<Logger name="p6spy" level="error" additivity="false">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="p6spy" />
+		</Logger>
+		<Logger name="org.springframework" level="error"
+			additivity="false">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="spring" />
+		</Logger>
+		<Logger name="com.ib" level="debug" additivity="false">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="fichiertraining" />
+		</Logger>
+		<Root level="error">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="fichierTraining" />
+		</Root>
+	</Loggers>
+</Configuration>

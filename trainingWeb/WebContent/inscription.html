@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Inscription</title>
+<script type="text/javascript" src="js/biblioWeb.js">
+	
+</script>
+<link rel="stylesheet" type="text/css" href="css/biblioWeb.css">
+<link rel="stylesheet" type="text/css" href="css/biblioWebMobile.css"
+	media="screen and (max-width:600px)">
+<link rel="stylesheet" type="text/css" href="css/biblioWebPrint.css"
+	media="print">
+
+</head>
+<body onload="initPage()">
+	<div id="page">
+		<header>
+			<img id="logo" src="images/logo.png" />
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="retour Accueil">Accueil</a></li>
+				<li><a href="inscription.html" title="s'inscrire">Inscription</a></li>
+				<li><a href="#consultation" title="consulter">Consultation</a>
+					<ul>
+						<li><a href="#rechercher" title="recherche par nom auteur">Rechercher
+								par Auteur</a></li>
+						<li><a href="#rechercher" title="recherche par titre">Rechercher
+								par titre</a></li>
+
+						<li><a href="#rechercher" title="recherche par isbn">Rechercher
+								par isbn</a></li>
+					</ul></li>
+				<li><a href="contact.html" title="nous contacter">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="content">
+			<div id="left">left gauche</div>
+			<div id="center">
+				<h1>Inscription</h1>
+				<button onclick="compter()">Compter</button>
+				<form action="inscriptionOk.html" method="post" id="inscriptionForm">
+					<fieldset>
+						<legend>Vous</legend>
+						<p>
+							<label>civilit&eacute;</label> <input type="radio"
+								name="civilite" value="h" />Mr <input type="radio"
+								name="civilite" value="femme" />Mme
+						</p>
+						<p>
+							<label>nom</label><input type="text" title="saisir votre nom" name="nom" placeholder="saisir votre nom"/>
+						</p>
+						<p>
+							<label>prenom</label><input type="text" name="prenom" />
+						</p>
+						<p>
+							<label>date de naissance</label><input type="date"
+								name="dateDeNaissance" />
+						</p>
+						<p>
+							<label>Continent</label> 
+								<select id="continent" name="continent">
+								<option value=""></option>
+								<option value="asie">Asie</option>
+								<option value="afrique">Afrique</option>
+								<option value="amerique">Amerique</option>
+								<option value="europe">Europe</option>
+							</select>
+							<label>Pays</label> 
+								<select id="pays">
+								<option value=""></option>
+							</select>
+						</p>
+
+
+						<p>
+							<label>Avez vous des enfants</label><input
+								onchange="toggleSectionEnfants()" type="checkbox"
+								name="isEnfant" />oui
+						</p>
+					</fieldset>
+					<fieldset id="sectionEnfants">
+						<legend>
+							<!-- coucou -->
+							Enfants
+						</legend>
+						<p>
+							<label>nbr enfants</label><input id="nbrEnfants"
+								onchange="afficherNomPrenomEnfants()" type="number"
+								name="nbrEnfants" min="1" value="" />
+						</p>
+						<section></section>
+					</fieldset>
+					<input type="submit" value="envoyer" />
+				</form>
+			</div>
+			<div id="right">right</div>
+		</div>
+		<footer>footer</footer>
+	</div>
+</body>
+<script type="text/javascript">//initPage();</script>
+</html>
