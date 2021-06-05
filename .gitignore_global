@@ -9,6 +9,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+target/
 
 # External tool builders
 .externalToolBuilders/
@@ -58,3 +59,8 @@ local.properties
 # Uncomment this line if you wish to ignore the project description file.
 # Typically, this file would be tracked if it contains build/dependency configurations:
 #.project
+
+trainingRS/target/m2e-wtp/web-resources/META-INF/maven/trainingRS/trainingRS/pom.properties
+trainingWeb/target/m2e-wtp/web-resources/META-INF/maven/trainingWeb/trainingWeb/pom.properties
+trainingCommon/target/classes/META-INF/maven/trainingCommon/trainingCommon/pom.properties
+trainingWeb/.classpath
