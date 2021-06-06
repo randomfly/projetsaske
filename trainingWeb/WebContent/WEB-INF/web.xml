@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <display-name>trainingWeb</display-name>
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>WEB-INF/applicationContextWeb.xml</param-value>
-  </context-param>
-  <listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-  </listener>
-  <error-page>
-    <error-code>404</error-code>
-    <location>/WEB-INF/jsp/erreur/erreur404.jsp</location>
-  </error-page>
-  <security-constraint>
-    <display-name>partie privee</display-name>
-    <web-resource-collection>
-      <web-resource-name>partie consultation</web-resource-name>
-      <url-pattern>/consultation/*</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
-      <description>partie privee du site</description>
-      <role-name>utilisateur</role-name>
-    </auth-constraint>
-  </security-constraint>
-  <login-config>
-    <auth-method>FORM</auth-method>
-    <form-login-config>
-      <form-login-page>/WEB-INF/jsp/login.jsp</form-login-page>
-      <form-error-page>/WEB-INF/jsp/erreur/erreurLogin.jsp</form-error-page>
-    </form-login-config>
-  </login-config>
-  <security-role>
-    <role-name>utilisateur</role-name>
-  </security-role>
+<web-app id="WebApp_ID" version="3.0"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ <display-name>trainingWeb</display-name>
+ <context-param>
+  <param-name>contextConfigLocation</param-name>
+  <param-value>WEB-INF/applicationContextWeb.xml</param-value>
+ </context-param>
+ <listener>
+  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+ </listener>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <error-page>
+  <error-code>404</error-code>
+  <location>/WEB-INF/jsp/erreur/erreur404.jsp</location>
+ </error-page>
+ <security-constraint>
+  <display-name>partie privee</display-name>
+  <web-resource-collection>
+   <web-resource-name>partie consultation</web-resource-name>
+   <url-pattern>/consultation/*</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+   <description>partie privee du site</description>
+   <role-name>user</role-name>
+  </auth-constraint>
+ </security-constraint>
+ <login-config>
+  <auth-method>FORM</auth-method>
+  <form-login-config>
+   <form-login-page>/WEB-INF/jsp/login.jsp</form-login-page>
+   <form-error-page>/WEB-INF/jsp/erreur/erreurLogin.jsp</form-error-page>
+  </form-login-config>
+ </login-config>
+ <security-role>
+  <role-name>user</role-name>
+ </security-role>
 </web-app>
