@@ -9,7 +9,7 @@ import com.ib.trainingcommon.bo.Course;
 import com.ib.trainingcommon.facade.ICourseFacade;
 
 /**
- * @author ib
+ * @author YH
  *
  */
 public class CourseAC implements ICourseAC {

@@ -10,10 +10,10 @@ public interface ICourseAC {
 
 	Course get(Integer id);
 
-	void save(Course livre);
+	void save(Course course);
 
-	void update(Course livre);
+	void update(Course course);
 
-	void delete(Course livre);
+	void delete(Course course);
 
 }

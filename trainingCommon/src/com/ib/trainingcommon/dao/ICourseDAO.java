@@ -12,7 +12,7 @@ public interface ICourseDAO {
 
 	void update(Course course);
 
-	void save(Course livre);
+	void save(Course course);
 
 	Course get(Integer id);
 

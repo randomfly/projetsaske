@@ -8,7 +8,7 @@ import java.util.List;
 import com.ib.trainingcommon.bo.Course;
 
 /**
- * @author ib
+ * @author YH
  *
  */
 public interface ICourseFacade {
@@ -17,10 +17,10 @@ public interface ICourseFacade {
 
 	Course get(Integer id);
 
-	void save(Course livre);
+	void save(Course course);
 
-	void update(Course livre);
+	void update(Course course);
 
-	void delete(Course livre);
+	void delete(Course course);
 
 }
