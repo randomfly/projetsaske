@@ -1,21 +1,33 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<fmt:setBundle basename="messages"></fmt:setBundle>
-<nav>
-	<ul>
-		<li><a href="accueil" title="retour Accueil"><fmt:message
-					key="menu.accueil"></fmt:message></a></li>
-		<li><a href="inscription" title="s'inscrire">Inscription</a></li>
-		<li><a href="consultation" title="consulter">Consultation</a>
-			<ul>
-				<li><a href="rechercher?typeRecherche=auteur" title="recherche par nom auteur">Rechercher
-						par Auteur</a></li>
-				<li><a href="rechercher?typeRecherche=titre" title="recherche par titre">Rechercher
-						par titre</a></li>
+<!-- MENU -->
+<section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+	<div class="container">
 
-				<li><a href="rechercher?typeRecherche=isbn" title="recherche par isbn">Rechercher
-						par isbn</a></li>
-			</ul></li>
-		<li><a href="contact" title="nous contacter">Contact</a></li>
-	</ul>
-</nav>
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span> <span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+
+			<!-- lOGO TEXT HERE -->
+			<a href="#" class="navbar-brand">Known</a>
+		</div>
+
+		<!-- MENU LINKS -->
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-nav-first">
+				<li><a href="#top" class="smoothScroll">Home</a></li>
+				<li><a href="#about" class="smoothScroll">About</a></li>
+				<li><a href="#team" class="smoothScroll">Our Teachers</a></li>
+				<li><a href="#courses" class="smoothScroll">Courses</a></li>
+				<li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
+				<li><a href="#contact" class="smoothScroll">Contact</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><i class="fa fa-phone"></i> +65 2244 1100</a></li>
+			</ul>
+		</div>
+
+	</div>
+</section>
