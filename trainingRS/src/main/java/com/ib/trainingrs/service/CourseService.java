@@ -54,7 +54,7 @@ public class CourseService {
 	@DELETE
 	@Path("{id}")
 	public String delete(@PathParam("id") Integer id) {
-		Course course = new Course(id, null, null, null);
+		Course course = new Course(id, null, null, null, null, null, null, null);
 		courseAC.delete(course);
 		return "ok";
 	}
