@@ -40,17 +40,23 @@
 
 			<div class="col-md-offset-1 col-md-4 col-sm-12">
 				<div class="entry-form">
-					<form action="#" method="post">
-						<h2>Signup today</h2>
-						<input type="text" name="full name" class="form-control"
-							placeholder="Full name" required=""> <input type="email"
-							name="email" class="form-control"
-							placeholder="Your email address" required=""> <input
+					<form id="formAuth" action="" method="post">
+						<h2 id="titleForm">Inscription</h2>
+						<a class="form-link" id="switchForm" onclick="showLogin()"
+							href="#about">se connecter</a> 
+						
+						<input id="emailForm" type="email" name="login"
+							class="form-control" placeholder="adresse@mail" required="" /> 
+						
+						<input id="passwordForm"
 							type="password" name="password" class="form-control"
-							placeholder="Your password" required="">
+							placeholder="Mot de passe" required="" />
+							
+						<input id="fullnameForm" type="text"
+							name="fullname" class="form-control" placeholder="Nom complet"
+							required="" />
 
-						<button class="submit-btn form-control" id="form-submit">Get
-							started</button>
+						<input type="submit" id="submitForm" class="submit-btn form-control" id="form-submit">S'enregistrer</button>
 					</form>
 				</div>
 			</div>

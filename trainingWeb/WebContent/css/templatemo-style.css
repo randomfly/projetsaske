@@ -79,9 +79,14 @@ https://templatemo.com/tm-516-known
     transition: 0.5s;
   }
 
-  a:hover, a:active, a:focus {
+  a:hover, a:active, a:focus, a.form-link:hover {
     color: #29ca8e;
     outline: none;
+  }
+
+  a.form-link {
+    color: #FFF;
+    cursor: pointer;
   }
 
   ::-webkit-scrollbar{
