@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.ib.trainingcommon.bo.User;
 
-public interface IUtilisateurAC {
+public interface IUserAC {
 
 	List<User> findAll();
 

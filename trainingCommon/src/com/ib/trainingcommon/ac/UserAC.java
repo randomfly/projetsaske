@@ -6,17 +6,21 @@ package com.ib.trainingcommon.ac;
 import java.util.List;
 
 import com.ib.trainingcommon.bo.User;
-import com.ib.trainingcommon.facade.IUtilisateurFacade;
+import com.ib.trainingcommon.facade.IUserFacade;
 
 /**
  * @author ib
  *
  */
-public class UtilisateurAC implements IUtilisateurAC {
+public class UserAC implements IUserAC {
 
-	private IUtilisateurFacade utilisateurFacade = null;
+	private IUserFacade userFacade = null;
 
-	public UtilisateurAC() {
+	public IUserFacade getUserFacade() {
+		return userFacade;
+	}
+
+	public UserAC() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -26,7 +30,7 @@ public class UtilisateurAC implements IUtilisateurAC {
 		List<User> Utilisateurs = null;
 
 		// appel à la couche Facade
-		Utilisateurs = utilisateurFacade.findAll();
+		Utilisateurs = userFacade.findAll();
 
 		return Utilisateurs;
 	}
@@ -34,22 +38,22 @@ public class UtilisateurAC implements IUtilisateurAC {
 	@Override
 	public void save(User utilisateur) {
 		if (!utilisateur.getPassword().isEmpty()) {
-			utilisateurFacade.save(utilisateur);
+			userFacade.save(utilisateur);
 		}
 	}
 
 	/**
-	 * @return the utilisateurFacade
+	 * @return the userFacade
 	 */
-	public IUtilisateurFacade getUtilisateurFacade() {
-		return utilisateurFacade;
+	public IUserFacade getUtilisateurFacade() {
+		return userFacade;
 	}
 
 	/**
-	 * @param utilisateurFacade the utilisateurFacade to set
+	 * @param userFacade the userFacade to set
 	 */
-	public void setUtilisateurFacade(IUtilisateurFacade utilisateurFacade) {
-		this.utilisateurFacade = utilisateurFacade;
+	public void setUserFacade(IUserFacade userFacade) {
+		this.userFacade = userFacade;
 	}
 
 	@Override

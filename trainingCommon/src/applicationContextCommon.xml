@@ -38,20 +38,20 @@
 	</bean>
 	<bean id="courseDAO" class="com.ib.trainingcommon.dao.CourseDAO">
 	</bean>
-	<bean id="utilisateurFacade"
-		class="com.ib.trainingcommon.facade.UtilisateurFacade">
-		<property name="utilisateurDAO" ref="utilisateurDAO"></property>
+	<bean id="userFacade"
+		class="com.ib.trainingcommon.facade.UserFacade">
+		<property name="userDAO" ref="userDAO"></property>
 	</bean>
-	<bean id="utilisateurAC"
-		class="com.ib.trainingcommon.ac.UtilisateurAC">
-		<property name="utilisateurFacade" ref="utilisateurFacade"></property>
+	<bean id="userAC"
+		class="com.ib.trainingcommon.ac.UserAC">
+		<property name="userFacade" ref="userFacade"></property>
 	</bean>
 
-	<bean id="utilisateurDAO"
-		class="com.ib.trainingcommon.dao.UtilisateurDAO">
+	<bean id="userDAO"
+		class="com.ib.trainingcommon.dao.UserDAO">
 	</bean>
-	<bean id="utilisateurBouchonDAO"
-		class="com.ib.trainingcommon.dao.UtilisateurBouchonDAO">
+	<bean id="userBouchonDAO"
+		class="com.ib.trainingcommon.dao.UserBouchonDAO">
 	</bean>
 
 

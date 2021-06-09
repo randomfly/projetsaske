@@ -10,9 +10,9 @@ import javax.persistence.criteria.Root;
 import com.ib.trainingcommon.bo.Role;
 import com.ib.trainingcommon.bo.User;
 
-public class UtilisateurDAO extends AbstractDAO implements IUtilisateurDAO {
+public class UserDAO extends AbstractDAO implements IUserDAO {
 
-	public UtilisateurDAO() {
+	public UserDAO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

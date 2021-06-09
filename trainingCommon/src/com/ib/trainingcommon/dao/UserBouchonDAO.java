@@ -5,9 +5,9 @@ import java.util.List;
 
 import com.ib.trainingcommon.bo.User;
 
-public class UtilisateurBouchonDAO implements IUtilisateurDAO {
+public class UserBouchonDAO implements IUserDAO {
 
-	public UtilisateurBouchonDAO() {
+	public UserBouchonDAO() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
