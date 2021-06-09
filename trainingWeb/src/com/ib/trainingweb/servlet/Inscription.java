@@ -21,7 +21,7 @@ import com.ib.trainingcommon.bo.User;
 @WebServlet({ "/inscription" })
 public class Inscription extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private IUtilisateurAC utilisateurAC;
+	private IUtilisateurAC userAC;
 
 	/**
 	 * Default constructor.
@@ -44,7 +44,7 @@ public class Inscription extends HttpServlet {
 
 		// recuperation du dispatcher
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("WEB-INF/jsp/inscription.jsp");
-
+		userAC.findAll();
 		// forward vers la jsp de la reponse
 		requestDispatcher.forward(request, response);
 
@@ -89,10 +89,10 @@ public class Inscription extends HttpServlet {
 			requestDispatcher = request.getRequestDispatcher("WEB-INF/jsp/inscription.jsp");
 		} else {
 			// sauvegarde de l'utlisateur
-			utilisateurAC.save(utilisateur);
+			userAC.save(utilisateur);
 		}
 
-		// utilisateurAC.save(utilisateur);
+		// userAC.save(utilisateur);
 		// passage des infos dans la session
 		request.getSession().setAttribute("utilisateur", utilisateur);
 		/*
@@ -105,18 +105,18 @@ public class Inscription extends HttpServlet {
 	}
 
 	/**
-	 * @return the utilisateurAC
+	 * @return the userAC
 	 */
 	public IUtilisateurAC getUtilisateurAC() {
-		return utilisateurAC;
+		return userAC;
 	}
 
 	/**
-	 * @param utilisateurAC the utilisateurAC to set
+	 * @param userAC the userAC to set
 	 */
 	@Autowired
-	public void setUtilisateurAC(IUtilisateurAC utilisateurAC) {
-		this.utilisateurAC = utilisateurAC;
+	public void setUtilisateurAC(IUtilisateurAC userAC) {
+		this.userAC = userAC;
 	}
 
 }
