@@ -45,6 +45,8 @@
 						<a class="form-link" id="switchForm" onclick="showLogin()"
 							href="#about">se connecter</a> 
 						
+						<input id="formAction" type="hidden" name="action" value="signup">
+						
 						<input id="emailForm" type="email" name="login"
 							class="form-control" placeholder="adresse@mail" required="" /> 
 						
