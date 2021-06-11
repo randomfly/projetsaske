@@ -10,22 +10,23 @@
 			</button>
 
 			<!-- lOGO TEXT HERE -->
-			<a href="#" class="navbar-brand">Known</a>
+			<a href="#home" class="navbar-brand" style="color:rgb(41, 202, 142);text-shadow: 1px 0 0 black, 0 1px 0 black, 0 1px 0 black, -1px 0 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+			 font-size: 2em;">IT-Training</a>
 		</div>
 
 		<!-- MENU LINKS -->
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-nav-first">
-				<li><a href="#top" class="smoothScroll">Home</a></li>
-				<li><a href="#about" class="smoothScroll">About</a></li>
-				<li><a href="#team" class="smoothScroll">Our Teachers</a></li>
-				<li><a href="#courses" class="smoothScroll">Courses</a></li>
-				<li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
+				<li><a href="#top" class="smoothScroll">Accueil</a></li>
+				<li><a href="#about" class="smoothScroll">Inscription</a></li>
+				<li><a href="#team" class="smoothScroll">Nos formateurs</a></li>
+				<li><a href="#courses" class="smoothScroll">Formations</a></li>
+				<li><a href="#testimonial" class="smoothScroll">Témoignages</a></li>
 				<li><a href="#contact" class="smoothScroll">Contact</a></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><i class="fa fa-phone"></i> +65 2244 1100</a></li>
+				<li><a href="#about"><i class="fa fa-phone"></i> Connexion</a></li>
 			</ul>
 		</div>
 

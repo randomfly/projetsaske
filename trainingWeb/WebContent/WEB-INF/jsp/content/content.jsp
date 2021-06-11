@@ -6,12 +6,10 @@
 				<div class="caption">
 					<div class="container">
 						<div class="col-md-6 col-sm-12">
-							<h1>Distance Learning Education Center</h1>
-							<h3>Our online courses are designed to fit in your industry
-								supporting all-round with latest technologies.</h3>
+							<h1>Toutes les formations</h1>
+							<h3>Nos formations sont disponibles en présentiel et en distenciel</h3>
 							<a href="#feature"
-								class="section-btn btn btn-default smoothScroll">Discover
-								more</a>
+								class="section-btn btn btn-default smoothScroll">Voir plus</a>
 						</div>
 					</div>
 				</div>
@@ -21,12 +19,10 @@
 				<div class="caption">
 					<div class="container">
 						<div class="col-md-6 col-sm-12">
-							<h1>Start your journey with our practical courses</h1>
-							<h3>Our online courses are built in partnership with
-								technology leaders and are designed to meet industry demands.</h3>
+							<h1>Commencez votre journée avec des cours pratiques</h1>
+							<h3>Nos cours et formations en ligne sont orientés travaux pratiques et vous permettent pratiquer au quotidien</h3>
 							<a href="#courses"
-								class="section-btn btn btn-default smoothScroll">Take a
-								course</a>
+								class="section-btn btn btn-default smoothScroll">Inscrivez-vous</a>
 						</div>
 					</div>
 				</div>
@@ -36,15 +32,12 @@
 				<div class="caption">
 					<div class="container">
 						<div class="col-md-6 col-sm-12">
-							<h1>Efficient Learning Methods</h1>
+							<h1>Des techniques d'apprentissages efficaces</h1>
 							<h3>
-								Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque
-								eu ex eu urna venenatis sollicitudin ut at libero. Visit <a
-									rel="nofollow" href="https://www.facebook.com/templatemo">templatemo</a>
-								page.
+								Nous proposons des formations adaptés à plusieurs profils, que vous soyez débutant ou plus expérimenté vous trouverez votre bohneur !
 							</h3>
 							<a href="#contact"
-								class="section-btn btn btn-default smoothScroll">Let's chat</a>
+								class="section-btn btn btn-default smoothScroll">Parlons-en</a>
 						</div>
 					</div>
 				</div>

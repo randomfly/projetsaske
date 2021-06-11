@@ -6,7 +6,7 @@
 			<div class="col-md-12 col-sm-12">
 				<div class="section-title">
 					<h2>
-						Student Reviews <small>from around the world</small>
+						Les témoignages <small>de nos anciens</small>
 					</h2>
 				</div>
 
@@ -17,12 +17,10 @@
 								<img src="images/tst-image1.jpg" class="img-responsive" alt="">
 							</div>
 							<div class="tst-author">
-								<h4>Jackson</h4>
-								<span>Shopify Developer</span>
+								<h4>Walli</h4>
+								<span>Ingénieur fréquence radio</span>
 							</div>
-							<p>You really do help young creative minds to get quality
-								education and professional job search assistance. Iâ€™d recommend
-								it to everyone!</p>
+							<p>It-training m'a vraiment apporté une plus value, ce qui m'a permis de trouver facilement un emploi</p>
 							<div class="tst-rating">
 								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
 									class="fa fa-star"></i> <i class="fa fa-star"></i> <i
@@ -37,12 +35,10 @@
 								<img src="images/tst-image2.jpg" class="img-responsive" alt="">
 							</div>
 							<div class="tst-author">
-								<h4>Camila</h4>
-								<span>Marketing Manager</span>
+								<h4>Yoanna</h4>
+								<span>Chef de projet</span>
 							</div>
-							<p>Trying something new is exciting! Thanks for the amazing
-								law course and the great teacher who was able to make it
-								interesting.</p>
+							<p>J'ai pu acquérir les hardskills et les softskills qui me permettent d'être à l'aise dans mon poste</p>
 							<div class="tst-rating">
 								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
 									class="fa fa-star"></i>
@@ -57,10 +53,9 @@
 							</div>
 							<div class="tst-author">
 								<h4>Barbie</h4>
-								<span>Art Director</span>
+								<span>Développeuse Java</span>
 							</div>
-							<p>Donec erat libero, blandit vitae arcu eu, lacinia placerat
-								justo. Sed sollicitudin quis felis vitae hendrerit.</p>
+							<p> LA formation à distance et l'équipe étaient au top !</p>
 							<div class="tst-rating">
 								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
 									class="fa fa-star"></i> <i class="fa fa-star"></i>
@@ -74,11 +69,10 @@
 								<img src="images/tst-image4.jpg" class="img-responsive" alt="">
 							</div>
 							<div class="tst-author">
-								<h4>Andrio</h4>
-								<span>Web Developer</span>
+								<h4>Nicolas</h4>
+								<span>Team Leader</span>
 							</div>
-							<p>Nam eget mi eu ante faucibus viverra nec sed magna.
-								Vivamus viverra sapien ex, elementum varius ex sagittis vel.</p>
+							<p> J'ai adoré le formateur et sa façon de transmettre son expérience ainsi que le programme proposé</p>
 							<div class="tst-rating">
 								<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
 									class="fa fa-star"></i> <i class="fa fa-star"></i>
