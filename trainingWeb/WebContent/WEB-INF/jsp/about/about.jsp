@@ -58,7 +58,7 @@
 							name="fullname" class="form-control" placeholder="Nom complet"
 							required="" />
 
-						<input type="submit" id="submitForm" class="submit-btn form-control" id="form-submit">S'enregistrer</button>
+						<input type="submit" id="submitForm" value="S'enregistrer" class="submit-btn form-control" id="form-submit"/>
 					</form>
 				</div>
 			</div>
