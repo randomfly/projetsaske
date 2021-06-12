@@ -9,7 +9,6 @@
 				<span class="icon icon-bar"></span> <span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-
 			<!-- lOGO TEXT HERE -->
 			<a href="#" class="navbar-brand">Known</a>
 		</div>
@@ -29,7 +28,6 @@
 					<li><a href="session">Mes Sessions</a></li>
 				</c:if>
 			</ul>
-
 			<ul class="nav navbar-nav navbar-right">
 				<c:choose>
 					<c:when test="${ isLogged}">
@@ -42,10 +40,7 @@
 								connecter</a></li>
 					</c:otherwise>
 				</c:choose>
-
-
 			</ul>
 		</div>
-
 	</div>
 </section>
