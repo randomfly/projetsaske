@@ -30,12 +30,7 @@ public class UtilisateurDAO extends AbstractDAO implements IUtilisateurDAO {
 
 	@Override
 	public void save(User utilisateur) {
-		/*
-		 * Role role = new Role(); role.setNom("utilisateur");
-		 * utilisateur.getRoles().add(role);
-		 */
-
-		Role role = getRole("utilisateur");
+		Role role = getRole("user");
 		if (role != null) {
 			utilisateur.getRoles().add(role);
 		}

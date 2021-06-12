@@ -76,3 +76,4 @@
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/custom.js"></script>
+     <script src="js/auth.js"></script>
