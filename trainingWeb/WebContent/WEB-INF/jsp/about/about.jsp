@@ -42,8 +42,8 @@
 				<div class="entry-form">
 					<form id="formAuth" action="" method="post">
 						<h2 id="titleForm">Inscription</h2>
-						<a class="form-link" id="switchForm" onclick="showLogin()"
-							href="#about">se connecter</a> 
+<!-- 						<a class="form-link" id="switchForm" onclick="showLogin()" -->
+<!-- 							href="#about">se connecter</a>  -->
 						
 						<input id="formAction" type="hidden" name="action" value="signup">
 						

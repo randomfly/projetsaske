@@ -318,6 +318,11 @@ https://templatemo.com/tm-516-known
     color: #ffffff;
   }
 
+  .custom-navbar .nav li .non-link a:hover {
+    background-color: transparent;
+    color: #575757;
+  }
+
   .custom-navbar .nav li.active > a {
     background-color: #29ca8e;
     color: #ffffff;
