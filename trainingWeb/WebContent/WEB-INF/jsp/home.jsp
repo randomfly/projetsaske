@@ -12,7 +12,7 @@
 	<%@include file="course/course.jsp"%>
 	<%@include file="testimonial/testimonial.jsp"%>
 	<%@include file="team/team.jsp"%>
-	<%@include file="feature/feature.jsp"%>
+
 	<%@include file="contact/contact.jsp"%>
 	<%@include file="footer/footer.jsp"%>
 	

@@ -39,7 +39,7 @@
 										 <span>12 pers</span>
 									</div>
 									<div class="courses-price">
-										<a href="#"><span>Inscription</span></a>
+										<a href="formation.html"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -74,7 +74,7 @@
 										 <span>10 pers</span>
 									</div>
 									<div class="courses-price">
-										<a href="#"><span>Inscription</span></a>
+										<a href="formation.html" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -97,7 +97,7 @@
 
 								<div class="courses-detail">
 									<h3>
-										<a href="#">Marketing Communication Digitale</a>
+										<a href="#">Marketing Communication Digital</a>
 									</h3>
 									<p>Montez en compétences sur le digitale au travers cette formation.</p>
 								</div>
@@ -109,7 +109,7 @@
 										<span>15 pers</span>
 									</div>
 									<div class="courses-price free">
-										<a href="#"><span>Inscription</span></a>
+										<a href="formation.html" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -143,7 +143,7 @@
 											alt=""> <span>15 pers</span>
 									</div>
 									<div class="courses-price">
-										<a href="#"><span>Inscription</span></a>
+										<a href="formation.html" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -177,7 +177,7 @@
 											alt=""> <span>10 pers</span>
 									</div>
 									<div class="courses-price free">
-										<a href="#"><span>Inscription</span></a>
+										<a href="formation.html" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
