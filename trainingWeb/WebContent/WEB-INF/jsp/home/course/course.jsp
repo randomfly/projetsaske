@@ -6,8 +6,8 @@
 			<div class="col-md-12 col-sm-12">
 				<div class="section-title">
 					<h2>
-						Popular Courses <small>Upgrade your skills with newest
-							courses</small>
+						Les prochaines sessions <small>Rejoignez-nous, On vous
+							attends !</small>
 					</h2>
 				</div>
 
@@ -21,25 +21,26 @@
 											alt="">
 									</div>
 									<div class="courses-date">
-										<span><i class="fa fa-calendar"></i> 12 / 7 / 2018</span> <span><i
-											class="fa fa-clock-o"></i> 7 Hours</span>
+										<span><i class="fa fa-calendar"></i> 15 / 6 / 2021</span> <span><i
+											class="fa fa-clock-o"></i> 57 Jours</span>
 									</div>
 								</div>
 
 								<div class="courses-detail">
 									<h3>
-										<a href="#">Social Media Management</a>
+										<a href="#">Ingénieur Devops</a>
 									</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Formation ouverte au détenteur d'un bac +5 dans
+										l'informatique ou en reconversion professionnelle</p>
 								</div>
 
 								<div class="courses-info">
 									<div class="courses-author">
 										<img src="images/author-image1.jpg" class="img-responsive"
-											alt=""> <span>Mark Wilson</span>
+											alt=""> <span>12 pers</span>
 									</div>
 									<div class="courses-price">
-										<a href="#"><span>USD 25</span></a>
+										<a href="session"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -55,25 +56,26 @@
 											alt="">
 									</div>
 									<div class="courses-date">
-										<span><i class="fa fa-calendar"></i> 20 / 7 / 2018</span> <span><i
-											class="fa fa-clock-o"></i> 4.5 Hours</span>
+										<span><i class="fa fa-calendar"></i> 07 / 10 / 2021</span> <span><i
+											class="fa fa-clock-o"></i> 57 jours</span>
 									</div>
 								</div>
 
 								<div class="courses-detail">
 									<h3>
-										<a href="#">Graphic & Web Design</a>
+										<a href="#">Développeur Java</a>
 									</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>POEI pour l'entreprise Atos, formation suivis d'un
+										contrat en CDI</p>
 								</div>
 
 								<div class="courses-info">
 									<div class="courses-author">
-										<img src="images/author-image2.jpg" class="img-responsive"
-											alt=""> <span>Jessica</span>
+										<img src="images/author-image4.jpg" class="img-responsive"
+											alt=""> <span>10 pers</span>
 									</div>
 									<div class="courses-price">
-										<a href="#"><span>USD 80</span></a>
+										<a href="session" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -89,25 +91,26 @@
 											alt="">
 									</div>
 									<div class="courses-date">
-										<span><i class="fa fa-calendar"></i> 15 / 8 / 2018</span> <span><i
-											class="fa fa-clock-o"></i> 6 Hours</span>
+										<span><i class="fa fa-calendar"></i> 12 / 8 / 2021</span> <span><i
+											class="fa fa-clock-o"></i> 2 semaines</span>
 									</div>
 								</div>
 
 								<div class="courses-detail">
 									<h3>
-										<a href="#">Marketing Communication</a>
+										<a href="#">Marketing Communication Digital</a>
 									</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Montez en compétences sur le digitale au travers cette
+										formation.</p>
 								</div>
 
 								<div class="courses-info">
 									<div class="courses-author">
 										<img src="images/author-image3.jpg" class="img-responsive"
-											alt=""> <span>Catherine</span>
+											alt=""> <span>15 pers</span>
 									</div>
 									<div class="courses-price free">
-										<a href="#"><span>Free</span></a>
+										<a href="session" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -123,25 +126,26 @@
 											alt="">
 									</div>
 									<div class="courses-date">
-										<span><i class="fa fa-calendar"></i> 10 / 8 / 2018</span> <span><i
-											class="fa fa-clock-o"></i> 8 Hours</span>
+										<span><i class="fa fa-calendar"></i> 01 / 7 / 2021</span> <span><i
+											class="fa fa-clock-o"></i> 2 jours</span>
 									</div>
 								</div>
 
 								<div class="courses-detail">
 									<h3>
-										<a href="#">Summer Kids</a>
+										<a href="#"> Communication jeune publique</a>
 									</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Ajouter cette corde à votre arc pour toucher un publique
+										plus large</p>
 								</div>
 
 								<div class="courses-info">
 									<div class="courses-author">
 										<img src="images/author-image1.jpg" class="img-responsive"
-											alt=""> <span>Mark Wilson</span>
+											alt=""> <span>15 pers</span>
 									</div>
 									<div class="courses-price">
-										<a href="#"><span>USD 45</span></a>
+										<a href="session" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -157,8 +161,8 @@
 											alt="">
 									</div>
 									<div class="courses-date">
-										<span><i class="fa fa-calendar"></i> 5 / 10 / 2018</span> <span><i
-											class="fa fa-clock-o"></i> 10 Hours</span>
+										<span><i class="fa fa-calendar"></i> 15 / 9 / 2021</span> <span><i
+											class="fa fa-clock-o"></i> 1 semaines</span>
 									</div>
 								</div>
 
@@ -166,16 +170,17 @@
 									<h3>
 										<a href="#">Business &amp; Management</a>
 									</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<p>Consolidez vos skills et découvrez de nouvelles
+										techniques pour de meilleurs résultats</p>
 								</div>
 
 								<div class="courses-info">
 									<div class="courses-author">
 										<img src="images/author-image2.jpg" class="img-responsive"
-											alt=""> <span>Jessica</span>
+											alt=""> <span>10 pers</span>
 									</div>
 									<div class="courses-price free">
-										<a href="#"><span>Free</span></a>
+										<a href="session" target="_blank"><span>Inscription</span></a>
 									</div>
 								</div>
 							</div>
@@ -183,7 +188,7 @@
 					</div>
 
 				</div>
-
 			</div>
 		</div>
+	</div>
 </section>

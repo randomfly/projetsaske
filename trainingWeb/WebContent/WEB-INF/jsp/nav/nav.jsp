@@ -10,18 +10,19 @@
 				<span class="icon icon-bar"></span>
 			</button>
 			<!-- lOGO TEXT HERE -->
-			<a href="#" class="navbar-brand">Known</a>
+			<a href="#home" class="navbar-brand"
+				style="color: rgb(41, 202, 142); text-shadow: 1px 1px #becad4; font-size: 2em; font-weight: 600;">IT-Training</a>
 		</div>
 
 		<!-- MENU LINKS -->
 		<div class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-nav-first">
-				<li><a href="home" class="smoothScroll">Home</a></li>
+				<li><a href="home" class="smoothScroll">Accueil</a></li>
 				<c:if test="${ !isLogged }">
-					<li><a href="#about" class="smoothScroll">About</a></li>
-					<li><a href="#team" class="smoothScroll">Our Teachers</a></li>
-					<li><a href="#courses" class="smoothScroll">Courses</a></li>
-					<li><a href="#testimonial" class="smoothScroll">Reviews</a></li>
+					<li><a href="#about" class="smoothScroll">S'inscrire</a></li>
+					<li><a href="#team" class="smoothScroll">Nos formateurs</a></li>
+					<li><a href="#courses" class="smoothScroll">Formations</a></li>
+					<li><a href="#testimonial" class="smoothScroll">Témoignages</a></li>
 					<li><a href="#contact" class="smoothScroll">Contact</a></li>
 				</c:if>
 				<c:if test="${ isLogged }">

@@ -6,33 +6,29 @@
 
 			<div class="col-md-6 col-sm-12">
 				<div class="about-info">
-					<h2>Start your journey to a better life with online practical
-						courses</h2>
+					<h2>Pourquoi nous choisir ?</h2>
 
 					<figure>
 						<span><i class="fa fa-users"></i></span>
 						<figcaption>
-							<h3>Professional Trainers</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Sint ipsa voluptatibus.</p>
+							<h3>Des formateurs professionnels</h3>
+							<p>Nous avons un vivier de formateur reconnues dans leur domaine à votre disposition</p>
 						</figcaption>
 					</figure>
 
 					<figure>
 						<span><i class="fa fa-certificate"></i></span>
 						<figcaption>
-							<h3>International Certifications</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Sint ipsa voluptatibus.</p>
+							<h3>Une  Certification reconnue par les entreprises</h3>
+							<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNous délivrons à chaque fin de formation une certification de réussite</p>
 						</figcaption>
 					</figure>
 
 					<figure>
 						<span><i class="fa fa-bar-chart-o"></i></span>
 						<figcaption>
-							<h3>Free for 3 months</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-								Sint ipsa voluptatibus.</p>
+							<h3>Notre bilan</h3>
+							<p>Une satisfaction haute et un taux de retour moyen à l'embauche de 80% dans les 6 mois après la formation</p>
 						</figcaption>
 					</figure>
 				</div>
@@ -41,7 +37,7 @@
 			<div class="col-md-offset-1 col-md-4 col-sm-12">
 				<div class="entry-form">
 					<form id="formAuth" action="" method="post">
-						<h2 id="titleForm">Inscription</h2>
+						<h2 id="titleForm">Inscrivez-vous</h2>
 <!-- 						<a class="form-link" id="switchForm" onclick="showLogin()" -->
 <!-- 							href="#about">se connecter</a>  -->
 						

@@ -9,6 +9,7 @@
 <body id="top" data-spy="scroll" data-target=".navbar-collapse"
 	data-offset="50">
 	<%@include file="nav/nav.jsp"%>
+	<%@include file="session/sessions/sessions.jsp"%>
 	<%@include file="contact/contact.jsp"%>
 	<%@include file="footer/footer.jsp"%>
 </body>

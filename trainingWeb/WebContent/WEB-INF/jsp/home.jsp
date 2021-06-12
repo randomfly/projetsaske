@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -9,12 +7,11 @@
 <body id="top" data-spy="scroll" data-target=".navbar-collapse"
 	data-offset="50">
 	<%@include file="nav/nav.jsp"%>
-	<%@include file="content/content.jsp"%>
-	<%@include file="feature/feature.jsp"%>
-	<%@include file="about/about.jsp"%>
-	<%@include file="course/course.jsp"%>
-	<%@include file="testimonial/testimonial.jsp"%>
-	<%@include file="team/team.jsp"%>
+	<%@include file="home/content/content.jsp"%>
+	<%@include file="home/about/about.jsp"%>
+	<%@include file="home/course/course.jsp"%>
+	<%@include file="home/testimonial/testimonial.jsp"%>
+	<%@include file="home/team/team.jsp"%>
 	<%@include file="contact/contact.jsp"%>
 	<%@include file="footer/footer.jsp"%>
 </body>
