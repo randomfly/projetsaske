@@ -10,8 +10,8 @@
 	<%@include file="home/content/content.jsp"%>
 	<%@include file="home/about/about.jsp"%>
 	<%@include file="home/course/course.jsp"%>
-	<%@include file="home/testimonial/testimonial.jsp"%>
 	<%@include file="home/team/team.jsp"%>
+	<%@include file="home/testimonial/testimonial.jsp"%>
 	<%@include file="contact/contact.jsp"%>
 	<%@include file="footer/footer.jsp"%>
 </body>
